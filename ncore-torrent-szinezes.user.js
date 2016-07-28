@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ncore-torrents-szinezes
 // @namespace    peetftp.ddns.net
-// @version      0.1
+// @version      1.0
 // @description  feltöltés ideje alapján szinezi a boxok hátterét
 // @author       kyle
 // @match        https://ncore.cc/torrents.php?miszerint*
