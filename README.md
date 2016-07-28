@@ -20,3 +20,5 @@ Színkód | Hetek száma |Szín
 '#BB8FCE'| 13
 '#D2B4DE'| 14
 '#E8DAEF'| 15
+
+2016.07.28 Kyle
