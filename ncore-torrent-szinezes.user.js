@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ncore-torrents-szinezes
 // @namespace    peetftp.ddns.net
-// @version      1.0
+// @version      1.1
 // @description  feltöltés ideje alapján szinezi a boxok hátterét
 // @author       kyle
 // @match        https://ncore.cc/torrents.php?miszerint*
@@ -13,10 +13,18 @@
 
 $(document).ready(function() {
     l = document.getElementsByClassName('box_feltoltve2');
-    colors = ['#2ECC71', '#58D68D', '#82E0AA', '#ABEBC6', '#D5F5E3',
+    colors_origi = ['#2ECC71', '#58D68D', '#82E0AA', '#ABEBC6', '#D5F5E3',
               '#3498DB', '#5DADE2', '#85C1E9', '#AED6F1', '#D6EAF8',
               '#8E44AD', '#A569BD', '#BB8FCE', '#D2B4DE', '#E8DAEF'];
-    cDate = new Date();
+    colors = ['#00FF00'];
+    step = 10;
+    for (i=1; i < 26; ++i) {
+        colorValue = i*step;
+        colorValueInHex = colorValue.toString(16);
+        colorValueInHex = colorValue < 17 ? '0'+colorValueInHex : colorValueInHex;
+
+        colors.push('#' + colorValueInHex + 'DD' + colorValueInHex);
+    }
 
     for (i=0; i < l.length; ++i) {
         sDate = l[i].innerHTML.split('<br>')[0];
