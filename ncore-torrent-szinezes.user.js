@@ -4,7 +4,7 @@
 // @version      1.1
 // @description  feltöltés ideje alapján szinezi a boxok hátterét
 // @author       kyle
-// @match        https://ncore.cc/torrents.php?miszerint*
+// @match        https://ncore.cc/torrents.php?*miszerint*
 // @grant        none
 // @require      https://code.jquery.com/ui/1.11.4/jquery-ui.js
 // @updateURL    https://raw.githubusercontent.com/peetertoth/ncore-torrent-szinezes/master/ncore-torrent-szinezes.user.js
